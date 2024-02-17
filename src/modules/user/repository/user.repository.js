@@ -59,28 +59,8 @@ export class UserRepository extends CrudRepositoryUtils {
       },
       select: {
         movie: {
-          select: {
-            id: true,
-            imdb_id: true,
-            title: true,
-            rated: true,
-            released: true,
-            runtime: true,
-            genre: true,
-            director: true,
-            writer: true,
-            actors: true,
-            plot: true,
-            language: true,
-            country: true,
-            awards: true,
-            poster: true,
-            metascore: true,
-            imdb_rating: true,
-            imdb_votes: true,
-            type: true
-          }
-        }
+        },
+        classificacao: true
       }
     });
   }
